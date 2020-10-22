@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-app
+  name: bmkflask-app
   labels:
-    app: flask
+    app: bmkflask
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: flask
+      app: bmkflask
   template:
     metadata:
       labels:
-        app: flask
+        app: bmkflask
     spec:
       containers:
-      - name: flask
+      - name: bmkflask
         image: yenaing/python_flask
         ports:
         - containerPort: 5000
@@ -28,4 +28,4 @@ spec:
         - name: hostvol
           persistentVolumeClaim:
             # PVC name you created
-            claimName: flask-pvc
+            claimName: bmkflask-pvc
