@@ -16,6 +16,6 @@ spec:
     Retain
   nfs:
     # NFS server's definition
-    path: /mnt/bmk
+    path: /mnt/bmk/flaskdata
     server: 192.168.14.10
     readOnly: false
