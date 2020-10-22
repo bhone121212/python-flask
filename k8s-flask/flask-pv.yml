@@ -16,6 +16,6 @@ spec:
     Retain
   nfs:
     # NFS server's definition
-    path: /mnt/flask
+    path: /mnt/bmk/flaskdata/todo-flask
     server: 192.168.14.11
     readOnly: false
