@@ -1,10 +1,11 @@
+
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   # any PVC name
-  name: flask-pvc
+  name: bmkflask-pvc
 spec:
-  storageClassName: flask001
+  storageClassName: flask003
   accessModes:
   # ReadWriteMany(RW from multi nodes), ReadWriteOnce(RW from a node), ReadOnlyMany(R from multi nodes)
     - ReadWriteMany
